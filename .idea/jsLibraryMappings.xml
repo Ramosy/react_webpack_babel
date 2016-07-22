@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{react_webpack_babel node_modules}" />
+    <file url="PROJECT" libraries="{bootstrap-DefinitelyTyped, d3-DefinitelyTyped, ejs-DefinitelyTyped, express-DefinitelyTyped, gulp-DefinitelyTyped, gulp-babel-DefinitelyTyped, gulp-less-DefinitelyTyped, gulp-util-DefinitelyTyped, gulp-watch-DefinitelyTyped, jQuery-2.0.0, koa-DefinitelyTyped, koa-bodyparser-DefinitelyTyped, koa-router-DefinitelyTyped, koa-static-DefinitelyTyped, mongodb-DefinitelyTyped, mongoose-DefinitelyTyped, mongoose-auto-increment-DefinitelyTyped, mongoose-deep-populate-DefinitelyTyped, mongoose-mock-DefinitelyTyped, node-DefinitelyTyped, nodeunit-DefinitelyTyped, react-DefinitelyTyped, react-redux-DefinitelyTyped, webpack-DefinitelyTyped}" />
+    <includedPredefinedLibrary name="ECMAScript 6" />
+    <includedPredefinedLibrary name="WebGL" />
+  </component>
+</project>
