@@ -1,0 +1,66 @@
+/*
+ *设置html元素样式
+ */
+@import "variable";
+@import "../util/util";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  font-family: @font-family;
+  background-color: @bg-color;
+  color: @text-color;
+  font-size: @font-size-base;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: @a-color;
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: @a-focus-color;
+  text-decoration: none;
+  outline: none;
+}
+
+a.text-normal {
+  color: @a-normal-color;
+}
+
+a.text-normal:hover,
+a.text-normal a:focus {
+  color: @a-normal-focus-color;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul,ol{
+  list-style: none;
+}
+
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+h3{
+  font-size: 2rem;
+}
+h4{
+  font-size: 1.5rem;
+}

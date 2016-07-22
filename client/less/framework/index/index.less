@@ -1,0 +1,260 @@
+@import "variable";
+
+body {
+  overflow-x: hidden;
+}
+
+.pie-container {
+  position: relative;
+  max-width: 350px;
+  width: 35rem;
+  height: 38rem;
+  margin: 2rem auto 5rem;
+  overflow: hidden;
+}
+.no-drive-action,.more-drive-action,.no-dtc-info,.more-dtc-info {
+  display: none;
+  font-size: 18px;
+}
+
+.pie-item-wrap {
+  overflow: hidden;
+  .pie-item {
+    float: left;
+    width: 44%;
+    margin: 0 3%;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border: 1px solid #adadad;
+    background: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    color: #000;
+    line-height: 35px;
+    box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.28) inset;
+    border-radius: 6px;
+    &.spe {
+      width: 94%;
+    }
+  }
+
+}
+
+.item-outer {
+  overflow: hidden;
+  .btn {
+    float: left;
+    width: 44%;
+    margin: 0 3%;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    display: block;
+    line-height: 35px;
+    box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.28) inset;
+    border-radius: 6px;
+    &.spe {
+      width: 94%;
+    }
+
+  }
+}
+
+.top-header {
+  overflow: hidden;
+  .icon-wrap {
+    float: left;
+    width: 15%;
+    height: 53px;
+    .glyphicon {
+      top: 1.3rem;
+      left: 1.2rem;
+      font-size: 2rem;
+      color: #000;
+    }
+  }
+  .main-tit {
+    width: 70%;
+    float: left;
+  }
+}
+
+/*弹性布局*/
+.flex-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  .flex-inner-1 {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+  }
+}
+
+.view-vhe-list {
+  display: block;
+  margin: 0 3% 10px;
+  font-size: 1.5rem;
+  line-height: 35px;
+  box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.28) inset;
+  border-radius: 6px;
+}
+
+.test-vhe-outer {
+  .test-vhe-num {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .flex-inner-1 {
+    padding-bottom: 15px;
+  }
+}
+
+.item-outer {
+  .flex-inner-1 {
+    margin: 1rem;
+    margin-top: 0;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.test-vhe-list {
+  padding: 0 10px;
+}
+
+/*客户车 tab切换*/
+.tab-wrap {
+  padding: 1rem 0;
+  margin: 0 2rem;
+  .tab-btn {
+    &.curr {
+      background-color: @text-red-color;
+      color: #fff;
+    }
+    padding: 10px 0;
+    border: 1px solid @text-red-color;
+    margin-left: -1px;
+    &:first-child {
+      -webkit-border-top-left-radius: 3px;
+      -moz-border-top-left-radius: 3px;
+      border-top-left-radius: 3px;
+      -webkit-border-bottom-left-radius: 3px;
+      -moz-border-bottom-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+    &:last-child {
+      -webkit-border-top-right-radius: 3px;
+      -moz-border-top-right-radius: 3px;
+      border-top-right-radius: 3px;
+      -webkit-border-bottom-right-radius: 3px;
+      -moz-border-bottom-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+}
+
+/*客户车数据统计*/
+.stati-list {
+  margin: 0 2rem;
+  margin-bottom: 1rem;
+  li {
+    float: left;
+    padding: 0.5rem 0;
+    width: 50%;
+  }
+}
+
+.veh-detail-table {
+  td {
+    min-width: 6em;
+  }
+}
+
+.table-outer {
+  margin: 0 1rem;
+  .vheList-vin{
+    width: 70%;
+  }
+  .vheList-btn{
+    width:30%;
+  }
+}
+
+.table {
+  tr:nth-child(even) {
+    background-color: #ececec;
+  }
+}
+
+.customer-item {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  //padding: 0 2rem;
+  left: 16%;
+  line-height: 26px;
+}
+.btn_notOnline {
+  background-color: #fff;
+  border-color: #adadad;
+}
+/* 车列表页面 */
+.table > tbody > tr > td {
+  line-height: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.table-outer p {
+  font-size: 1.5rem;
+}
+.vechile-status-ico {
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px -8px 0px;
+  display: inline-block;
+  &.vechile-status-top {
+    width: 32px;
+    height: 32px;
+    margin: 12px 0px 0px 0px;
+  }
+  &.vehicle-error {
+    background: url("@{img-path-base}/main/pop_icon_vehicle_yellow.png") no-repeat;
+    background-size: contain;
+  }
+  &.vehicle-online {
+    background: url("@{img-path-base}/main/pop_icon_vehicle_green.png") no-repeat;
+    background-size: contain;
+  }
+  &.vehicle-offline {
+    background: url("@{img-path-base}/main/pop_icon_vehicle_gray.png") no-repeat;
+    background-size: contain;
+  }
+}
+.vechile-title {
+  font-size: 1.5rem;
+  margin: 8px 0px 15px;
+  & > .vechile-title-ico{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    background: #F29C9F;
+  }
+}
+
+.veh-detail-table > tbody > tr >td:first-child {
+  width: 32%;
+}

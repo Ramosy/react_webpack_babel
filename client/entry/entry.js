@@ -4,4 +4,4 @@
 require('es5-shim');
 require('es5-shim/es5-sham');
 require('console-polyfill');
-require('!babel!jsx!../component/HelloWorldComponent.js');
+require('../component/Framwork.js');
