@@ -8,6 +8,13 @@ module.exports = {
         path: __dirname+"/client/bundle",
         filename: '/bundle.js'
     },
+    plugins:[
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        })
+    ],
     resolve: {
         extensions: ['', '.js', '.jsx'],
         root: [
